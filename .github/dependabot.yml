@@ -9,10 +9,19 @@ updates:
     directory: "/docker" # Location of package manifests
     schedule:
       interval: "daily"
-      timezone: "US/Central"
+      timezone: "GMT"
+      time: "06:00"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
-      timezone: "US/Central"
+      timezone: "GMT"
+      time: "06:00"
+
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      timezone: "GMT"
+      time: "06:00"
